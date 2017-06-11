@@ -4,7 +4,25 @@ pre {
   font-family: 'Open Sans', sans-serif;
 }
 
-.heading{
+.card > div {
+   text-align: center;
+   flex-direction: column;
+}
+
+.table--wrapper {
+   overflow-x:auto;
+}
+
+.table--tour-dates {
+   min-width: 455px;
+   margin: 0 auto;
+   text-align: left;
+   border-collapse: separate;
+   border-spacing: 20px 10px;
+}
+
+
+.card__heading{
   display: inline-block;
   margin: 0;
 }
@@ -13,4 +31,12 @@ pre {
   width: 40px;
   height: 0%;
   padding: 10px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+   .card__heading{
+     display: inline-block;
+     margin: 0;
+   }
 }
