@@ -81,7 +81,7 @@ a:hover {
 
 header {
    text-align: center;
-   background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+   background:  #f2f1ef url('../img/concert02_no_text.jpg') no-repeat top center ;
    background-size: cover;
    overflow: hidden;
    padding-top: 60px;
