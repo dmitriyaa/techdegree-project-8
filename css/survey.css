@@ -75,7 +75,7 @@ select {
 
 input:focus,
 textarea:focus {
-   color: #050709
+   color: #050709;
    box-shadow: none;
    background-color: #00b16a;
    transition: background-color .5s;
