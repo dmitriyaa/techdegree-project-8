@@ -1,8 +1,23 @@
 /* Survey page styles */
+.card,
+.photo {
+   margin: 0 auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
 
-.photo{
-  width: 60%;
-  padding: 10px;
+.photo {
+   width: 100%;
+}
+
+.container{
+   width: 100%;
+}
+
+.survey,
+.newsletter {
+   width: 100%;
+   margin: 0 auto;
 }
 
 form {
@@ -11,18 +26,104 @@ form {
   display: inline-block;
 }
 
-.container{
-  text-align: center;
-}
-.newsletter{
-  text-align: right;
-
+fieldset {
+   border: none;
+   padding: 15px;
+   margin-top: 20px;
 }
 
+label {
+   font-size: 1rem;
+   display: block;
+   margin-top: 1.5em;
+   margin-bottom: .5em;
+}
+
+fieldset > label:first-of-type {
+   margin-top: 0;
+}
+
+legend {
+   font-size: 1.5rem;
+   color: #00b16a;
+}
+
+
+
+label.light {
+   display: inline;
+   color: #bdc3c7;
+   cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+   color: #050709;
+   font-size: .9rem;
+   border: none;
+   outline: 0;
+   height: 50px;
+   box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.37);
+   border-radius: 5px;
+   padding: 15px;
+   background-color: #bdc3c7;
+   transition: background-color .5s;
+      width: 100%;
+}
+
+input:focus,
+textarea:focus {
+   color: #050709
+   box-shadow: none;
+   background-color: #00b16a;
+   transition: background-color .5s;
+}
+
+textarea {
+   resize: none;
+   height: 100px;
+}
+
+input[type="radio"]{
+   margin: 16px 14px 0;
+}
+
+button {
+  padding: 20px 0;
+  color: #050709;
+  background-color: #00b16a;
+  font-size: 1rem;
+  border-radius: 5px;
+  min-width: calc(100% - 30px);
+  border: none;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+button:hover {
+   cursor: pointer;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
   .photo{
     width: 40%;
   }
+
+  .newsletter fieldset label {
+      width: 35%;
+      float: left;
+      clear: both;
+      margin: 0 0 30px;
+      padding: 15px 0;
+   }
+
+   .newsletter fieldset input,
+   .newsletter fieldset select{
+      width: 65%;
+      float: right;
+   }
+
 }

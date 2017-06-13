@@ -29,43 +29,67 @@
          <div class="flex">
             <img class="photo" src= "img/concert01.jpg" alt="crowd on the concert">
             <div class="container">
-               <form class = "survey">
-                  <p>Who is your favorite band member:</p>
-                  <input type="radio" name="res" value="John"> John
-                  <input type="radio" name="res" value="Hazzard"> Hazzard
-                  <input type="radio" name="res" value="Bob"> Bob
-                  <input type="radio" name="res" value="Sally"> Sally
+               <form action="survey.html" method="post" class="survey">
+                  <fieldset>
+                     <legend>Band prefedrences:</legend>
 
-                  <p>What is your favorite album:</p>
-                  <select id="albums" name="select">
-                     <option value="1">Party For An Angel</option>
-                     <option value="2">A Day Of Old</option>
-                     <option value="3">Finding My Shadow</option>
-                     <option value="4">Diamond Fireworks</option>
-                     <option value="5">Enjoy Your Desire</option>
-                     <option value="6">This Is For You</option>
-                     <option value="7">Music Of My Life</option>
-                     <option value="8">Song For Yesterday</option>
-                     <option value="9">Heroic Forever</option>
-                     <option value="10">Midnight Fires</option>
-                     <option value="11">Street Of The Rider</option>
-                  </select>
+                     <label>Who is your favorite band member:</label>
 
-                  <p>What is your favorite song:</p>
-                  <textarea></textarea>
+                        <input type="radio" id="group-member--john" value="John" name="res" >
+                        <label for="group-member--john" class="light">John</label><br>
+
+                        <input type="radio" id="group-member--hazzard" value="Hazzard" name="res" >
+                        <label for="group-member--hazzard" class="light">Hazzard</label><br>
+
+                        <input type="radio" id="group-member--bob" value="Bob" name="res" >
+                        <label for="group-member--bob" class="light">Bob</label><br>
+
+                        <input type="radio" id="group-member--sally" value="Sally" name="res" >
+                        <label for="group-member--sally" class="light">Sally</label><br>
+
+
+                     <label for="albums">What is your favorite album:</label>
+                     <select id="albums" name="select">
+                        <option value="1" selected>A Day Of Old</option>
+                        <option value="2">Diamond Fireworks</option>
+                        <option value="3">Enjoy Your Desire</option>
+                        <option value="4">Finding My Shadow</option>
+                        <option value="5">Heroic Forever</option>
+                        <option value="6">Midnight Fires</option>
+                        <option value="7">Music Of My Life</option>
+                        <option value="8">Party For An Angel</option>
+                        <option value="9">Song For Yesterday</option>
+                        <option value="10">Street Of The Rider</option>
+                        <option value="11">This Is For You</option>
+                     </select>
+
+                     <label for="fav-song">What is your favorite song:</label>
+                     <textarea id="fav-song" name="fav-song"></textarea>
+                  </fieldset>
+                  <button type="submit">Submit</button>
                </form>
             </div>
          </div>
       </div>
-      <p class= "heading">Newsletter</p>
+      <h2 class= "card__heading">Newsletter</h2>
       <div class="card">
          <div class="flex">
             <img class="photo" src= "img/the_band.jpg" alt="guitarist and drummer on stage">
             <div class="container">
-               <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
+               <form action="survey.html" method="post" class="newsletter">
+                  <fieldset>
+                     <legend>Subscribe:</legend>
+
+                     <label for="name">Name:</label>
+                     <input id="name" type ="text" name="textfield">
+
+                     <label for="email">Email:</label>
+                     <input id="email" type ="email" name="textfield">
+
+                     <label for="email-check">Retype Email:</label>
+                     <input id="email-check" type ="email" name="textfield">
+                  </fieldset>
+
                   <button type="submit">Sign Up</button>
                </form>
             </div>

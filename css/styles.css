@@ -69,7 +69,7 @@ a:hover {
 }
 
 .nav a {
-   color: #e74c3c;
+   color: #f64747;
    transition: all .5s;
    display: block;
    padding: 5px 15px;
@@ -204,18 +204,6 @@ a.social {
    background-size: 30px 30px;
    opacity: .4;
    transition: all .5s;
-}
-
-a.twitter {
-   background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-   background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-   background-image: url(../img/spotify-32.png);
 }
 
 a.social:hover {
