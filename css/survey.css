@@ -91,6 +91,7 @@ input[type="radio"]{
 }
 
 button {
+   font-weight: bold;
   padding: 20px 0;
   color: #050709;
   background-color: #00b16a;
@@ -103,6 +104,8 @@ button {
 }
 
 button:hover {
+   background-color: #009851;
+   color: #fefefe;
    cursor: pointer;
 }
 
