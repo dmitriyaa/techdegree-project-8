@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <nav class="main-nav">
+   <nav class="main-nav" role="navigation">
       <ul class="nav">
          <li class="name"><a href="index.html">Accessible Frog</a></li>
          <li class="nav__item"><a href="tour.html">Tour</a></li>
@@ -18,12 +18,12 @@
       </ul>
    </nav>
 
-   <header class="header">
+   <header class="header" role="banner">
       <h1 class="header__name">Accessible frog</h1>
       <p class="header__text">we make awesome music</p>
    </header>
 
-   <main>
+   <main role="main">
       <h2 class= "card__heading">Survey</h2>
       <div class="card">
          <div class="flex">
@@ -66,7 +66,8 @@
                      <label for="fav-song">What is your favorite song:</label>
                      <textarea id="fav-song" name="fav-song"></textarea>
                   </fieldset>
-                  <button type="submit">Submit</button>
+                  <button type="submit" aria-describedby="hint--survey">Submit</button>
+                  <p class="hint" id="hint--survey">By submitting this information you are helping the band to improve!</p>
                </form>
             </div>
          </div>
@@ -90,14 +91,15 @@
                      <input id="email-check" type ="email" name="textfield">
                   </fieldset>
 
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" aria-describedby="hint--newsletter">Sign Up</button>
+                  <p class="hint" id="newsletter">You will receive newsletter email every month!</p>
                </form>
             </div>
          </div>
       </div>
    </main>
 
-   <footer>
+   <footer role="contentinfo">
       <ul>
          <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter logo"></a></li>
          <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="yourube logo"></a></li>

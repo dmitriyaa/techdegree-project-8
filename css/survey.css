@@ -109,6 +109,14 @@ button:hover {
    cursor: pointer;
 }
 
+.hint {
+   display: inline-block;
+   margin-left: 15px;
+   font-size: .9rem;
+   font-weight: 300;
+   font-style: italic;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
   .photo{
