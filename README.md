@@ -10,7 +10,7 @@ For this project I modified the website files provided for the rock band “Acce
 * Improved the HTML structure by applying HTML5 tags
 * All images now have *alt* attribute
 * Links are distinctly visible and have hover states
-* Table is now properly structured with <td>, <th>, scope and caption elements
+* Table is now properly structured with td, th, scope and caption elements
 * Form is also properly set up
 * The code was checked via Chrome Accessibility and Firefox Fangs tools with no errors
 
