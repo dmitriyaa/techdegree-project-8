@@ -14,7 +14,7 @@ For this project I modified the website files provided for the rock band “Acce
 * Form is also properly set up
 * The code was checked via Chrome Accessibility and Firefox Fangs tools with no errors
 
-## Screenshot
+## Screenshots
 ![creenshot of the website](https://raw.githubusercontent.com/dmitriyaa/storage/master/screenshot--techdegree-project-1.png)
 
 Here is a [link](https://dmitriyaa.github.io/techdegree-project-1) to live demo.
