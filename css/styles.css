@@ -141,14 +141,14 @@ header .name{
    font-weight: bold;
    display: inline-block;
    padding: 15px;
-   background: #e74c3c;
+   background: #d50000;
    border-radius: 5px;
    color: #f2f1ef;
 }
 
 .card__link:hover {
    background: #f2f1ef;
-   color: #e74c3c;
+   color: #d50000;
 }
 
 .photo{
